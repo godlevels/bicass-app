@@ -1,4 +1,5 @@
 import Collabs from "./components/Collabs"
+import Features from "./components/Features"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Support from "./components/Support"
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <Collabs />
         <Support />
+        <Features />
       </div>
     </div>
   )

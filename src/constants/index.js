@@ -6,6 +6,9 @@ import grammarly from "../assets/gram.png"
 import analyIcon  from "../assets/analy.png"
 import engIcon  from "../assets/eng.png"
 import pubIcon  from "../assets/pub.png"
+import collabCard  from "../assets/collab.png"
+import cloudCard  from "../assets/cloud.png"
+import dailyCard  from "../assets/daily.png"
 export const navLinks = [
     {
       id: "home",
@@ -110,3 +113,20 @@ export const heroData = {
     ]
   };
   
+export const featuresData = [
+    {
+      title: "Collaboration Teams",
+      description: "Here you can handle projects together with team virtually",
+      image: collabCard
+    },
+    {
+      title: "Cloud Storage",
+      description: "No need to worry about storage because we provide storage up to 2 TB",
+      image: cloudCard
+    },
+    {
+      title: "Daily Analytics",
+      description: "We always provide useful information to make it easier for you every day",
+      image: dailyCard
+    }
+  ];
