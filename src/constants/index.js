@@ -130,3 +130,132 @@ export const featuresData = [
       image: dailyCard
     }
   ];
+
+export const benefitsData = [
+    "Free Consulting With Expert Saving Money",
+    "Online Banking",
+    "Investment Report Every Month",
+    "Saving Money For The Future",
+    "Online Transaction"
+];
+
+export const pricingData = {
+    monthly: [
+      {
+        title: "Free",
+        description: "Have a go and test your superpowers",
+        price: "$0",
+        features: [
+          "2 Users",
+          "2 Files",
+          "Public Share & Comments",
+          "Chat Support",
+          "New income apps"
+        ],
+        buttonText: "Signup for free",
+        buttonClass: "bg-white text-green-500"
+      },
+      {
+        title: "Pro",
+        description: "Experiment the power of infinite possibilities",
+        price: "$8",
+        features: [
+          "4 Users",
+          "All apps",
+          "Unlimited editable exports",
+          "Folders and collaboration",
+          "All incoming apps"
+        ],
+        bgStyle: "w-[374px] h-[583px] top-[3819px] left-[544px] bg-green md:w-1/3",
+        textStyle: "text-[#fff]",
+        buttonText: "Go to pro",
+        buttonClass: "bg-green-500 text-white"
+      },
+      {
+        title: "Business",
+        description: "Unveil new superpowers and join the Design League",
+        price: "$16",
+        features: [
+          "All the features of pro plan",
+          "Account success Manager",
+          "Single Sign-On (SSO)",
+          "Co-conception program",
+          "Collaboration - Soon"
+        ],
+        buttonText: "Goto Business",
+        buttonClass: "bg-white text-green-500"
+      }
+    ],
+    yearly: [
+      {
+        title: "Free",
+        description: "Have a go and test your superpowers",
+        price: "$0",
+        features: [
+          "2 Users",
+          "2 Files",
+          "Public Share & Comments",
+          "Chat Support",
+          "New income apps"
+        ],
+        buttonText: "Signup for free",
+        buttonClass: "bg-white text-green-500"
+      },
+      {
+        title: "Pro",
+        description: "Experiment the power of infinite possibilities",
+        price: "$80",
+        save: "Save $50 a year",
+        features: [
+          "4 Users",
+          "All apps",
+          "Unlimited editable exports",
+          "Folders and collaboration",
+          "All incoming apps"
+        ],
+        buttonText: "Go to pro",
+        buttonClass: "bg-green-500 text-white"
+      },
+      {
+        title: "Business",
+        description: "Unveil new superpowers and join the Design League",
+        price: "$160",
+        features: [
+          "All the features of pro plan",
+          "Account success Manager",
+          "Single Sign-On (SSO)",
+          "Co-conception program",
+          "Collaboration - Soon"
+        ],
+        buttonText: "Goto Business",
+        buttonClass: "bg-white text-green-500"
+      }
+    ]
+  };
+
+export const testimonialData = {
+    title: "People are Saying About DoWhith",
+    description: "Everything you need to accept to payment and grow your money of manage anywhere on planet",
+    testimonials: [
+      {
+        quote: "I am very helped by this E-wallet application, my days are very easy to use this application and its very helpful in my life, even I can pay a short time 😍",
+        author: "Aria Zinarino",
+        avatar: notion
+      },
+      {
+        quote: "This app has completely changed the way I handle my finances. It's so easy and convenient!",
+        author: "John Doe",
+        avatar: notion
+      },
+      {
+        quote: "A fantastic tool for managing money on the go. I love the features and the interface.",
+        author: "Jane Smith",
+        avatar: notion
+      },
+      {
+        quote: "Highly recommend this app to anyone looking for an easy way to manage their finances.",
+        author: "Michael Brown",
+        avatar: notion
+      },
+    ]
+  };
