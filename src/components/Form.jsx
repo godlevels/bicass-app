@@ -4,12 +4,12 @@ import formIcon from "../assets/euro.png"
 const Form = () => {
     return (
         <div className="flex items-center">
-            <div className="bg-[#222938] p-8 rounded-lg shadow-lg w-[612px] h-[588px] top-[4763px] left-[697]">
+            <div className="bg-[#222938] p-8 rounded-lg shadow-lg w-[512px] h-[488px] top-[4763px] left-[697px]">
                 <div className="flex justify-center mb-4">
                     {/* Add your icon here */}
-                    <img src={formIcon} alt="Icon" className="w-12 h-12" />
+                    <img src={formIcon} alt="Icon" className="w-[72.06px] h-[86px] top-[40px] left-[269px]" />
                 </div>
-                    <h2 className="text-2xl text-center text-white mb-6">Get Started</h2>
+                    <h2 className="text-[30px] text-center text-white font-medium leading-[36.31px] mb-6">Get Started</h2>
                 <form>
                     <div className="mb-4">
                         <label htmlFor="email" className="block text-white text-sm font-bold mb-2">
