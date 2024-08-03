@@ -9,6 +9,12 @@ import pubIcon  from "../assets/pub.png"
 import collabCard  from "../assets/collab.png"
 import cloudCard  from "../assets/cloud.png"
 import dailyCard  from "../assets/daily.png"
+import img1 from "../assets/1.png"
+import img2 from "../assets/2.png"
+import img3 from "../assets/3.png"
+import img4 from "../assets/4.png"
+
+
 export const navLinks = [
     {
       id: "home",
@@ -144,7 +150,9 @@ export const pricingData = {
       {
         title: "Free",
         description: "Have a go and test your superpowers",
-        price: "$0",
+        price: "0",
+        popular: false,
+        inverse: false,
         features: [
           "2 Users",
           "2 Files",
@@ -153,12 +161,13 @@ export const pricingData = {
           "New income apps"
         ],
         buttonText: "Signup for free",
-        buttonClass: "bg-white text-green-500"
       },
       {
         title: "Pro",
         description: "Experiment the power of infinite possibilities",
-        price: "$8",
+        price: "8",
+        popular: true,
+        inverse: true,
         features: [
           "4 Users",
           "All apps",
@@ -166,15 +175,14 @@ export const pricingData = {
           "Folders and collaboration",
           "All incoming apps"
         ],
-        bgStyle: "w-[374px] h-[583px] top-[3819px] left-[544px] bg-green md:w-1/3",
-        textStyle: "text-[#fff]",
         buttonText: "Go to pro",
-        buttonClass: "bg-green-500 text-white"
       },
       {
         title: "Business",
         description: "Unveil new superpowers and join the Design League",
-        price: "$16",
+        price: "16",
+        popular: false,
+        inverse: false,
         features: [
           "All the features of pro plan",
           "Account success Manager",
@@ -183,14 +191,15 @@ export const pricingData = {
           "Collaboration - Soon"
         ],
         buttonText: "Goto Business",
-        buttonClass: "bg-white text-green-500"
       }
     ],
     yearly: [
       {
         title: "Free",
         description: "Have a go and test your superpowers",
-        price: "$0",
+        price: "0",
+        popular: false,
+        inverse: false,
         features: [
           "2 Users",
           "2 Files",
@@ -199,12 +208,13 @@ export const pricingData = {
           "New income apps"
         ],
         buttonText: "Signup for free",
-        buttonClass: "bg-white text-green-500"
       },
       {
         title: "Pro",
         description: "Experiment the power of infinite possibilities",
-        price: "$80",
+        price: "80",
+        popular: true,
+        inverse: true,
         save: "Save $50 a year",
         features: [
           "4 Users",
@@ -214,12 +224,13 @@ export const pricingData = {
           "All incoming apps"
         ],
         buttonText: "Go to pro",
-        buttonClass: "bg-green-500 text-white"
       },
       {
         title: "Business",
         description: "Unveil new superpowers and join the Design League",
-        price: "$160",
+        price: "160",
+        popular: false,
+        inverse: false,
         features: [
           "All the features of pro plan",
           "Account success Manager",
@@ -228,34 +239,33 @@ export const pricingData = {
           "Collaboration - Soon"
         ],
         buttonText: "Goto Business",
-        buttonClass: "bg-white text-green-500"
       }
     ]
   };
 
-export const testimonialData = {
-    title: "People are Saying About DoWhith",
-    description: "Everything you need to accept to payment and grow your money of manage anywhere on planet",
-    testimonials: [
-      {
-        quote: "I am very helped by this E-wallet application, my days are very easy to use this application and its very helpful in my life, even I can pay a short time 😍",
-        author: "Aria Zinarino",
-        avatar: notion
-      },
-      {
-        quote: "This app has completely changed the way I handle my finances. It's so easy and convenient!",
-        author: "John Doe",
-        avatar: notion
-      },
-      {
-        quote: "A fantastic tool for managing money on the go. I love the features and the interface.",
-        author: "Jane Smith",
-        avatar: notion
-      },
-      {
-        quote: "Highly recommend this app to anyone looking for an easy way to manage their finances.",
-        author: "Michael Brown",
-        avatar: notion
-      },
-    ]
-  };
+export const testimonials = [
+  {
+    id: 1,
+    name: 'Aria Zinario',
+    text: 'I am very helped by this E-wallet application, my days are very easy to use this application and its very helpful in my life, even I can pay a short time.',
+    image: img1,
+  },
+  {
+    id: 2,
+    name: 'John Doe',
+    text: 'This application has changed the way I handle my finances. It is incredibly user-friendly and reliable.',
+    image: img2,
+  },
+  {
+    id: 3,
+    name: 'Jane Smith',
+    text: 'A game changer for my daily transactions. Highly recommend to everyone!',
+    image: img3,
+  },
+  {
+    id: 4,
+    name: 'Mike Johnson',
+    text: 'An amazing application that makes financial management a breeze.',
+    image: img4,
+  },
+]

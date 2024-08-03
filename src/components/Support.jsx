@@ -2,7 +2,7 @@ import { supportData } from "../constants";
 
 const Support = () => {
     return (
-        <div className="w-full h-[28rem] lg:px-24 md:px-16 sm:px-6 px-4 lg:py-4 md:py-4 sm:py-1 py-1 sticky top-0 font-[inter] bg-supBg">
+        <div className="w-full h-[32rem] lg:px-24 md:px-16 sm:px-6 px-4 lg:py-4 md:py-4 sm:py-1 py-1 sticky top-0 font-[inter] bg-supBg">
             <div className="flex w-[90rem] gap-x-10 mt-8">
                 <div className="w-[40.2rem]">
                     <div className="text-left mb-8">

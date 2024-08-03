@@ -1,32 +1,44 @@
 /* eslint-disable react/no-unescaped-entities */
 import { useState } from "react";
-import { testimonialData } from "../constants";
+import { testimonials } from "../constants";
+import textIcon from "../assets/quote.png"
+import testImg from "../assets/play.png"
 
 const Testimonial = () => {
-    const [selectedTestimonial, setSelectedTestimonial] = useState(testimonialData.testimonials[0]);
+    const [currentTestimonial, setCurrentTestimonial] = useState(testimonials[0]);
+
+    const handleClick = (testimonial) => {
+        setCurrentTestimonial(testimonial);
+    };
+
+
     return (
-        <div>
-            <div className="bg-gray-900 text-white p-8 rounded-lg max-w-3xl mx-auto">
-      <h2 className="text-2xl font-bold mb-4">{testimonialData.title}</h2>
-      <p className="text-gray-400 mb-8">{testimonialData.description}</p>
-      <blockquote className="italic text-lg mb-4">
-        <p>"{selectedTestimonial.quote}"</p>
-      </blockquote>
-      <p className="text-right mb-8">_ {selectedTestimonial.author}</p>
-      <div className="flex justify-center items-center space-x-4">
-        {testimonialData.testimonials.map((testimonial, index) => (
-          <img
-            key={index}
-            src={testimonial.avatar}
-            alt={`Avatar ${index + 1}`}
-            className={`w-12 h-12 rounded-full cursor-pointer ${selectedTestimonial === testimonial ? 'border-2 border-white' : ''}`}
-            onClick={() => setSelectedTestimonial(testimonial)}
-          />
-        ))}
-        <button className="w-12 h-12 rounded-full bg-white flex items-center justify-center text-gray-900">
-        </button>
-      </div>
-    </div>
+        <div className="w-[466px] h-[588px] top-[4763] left-[130px]">
+            <h1 className="text-[#fff] text-[50px] text-left font-semibold leading-[60.51px] mb-4 w-[444px] h-[122px] top-[4763px] left-[130px]">People are Saying About DoWhith</h1>
+            <p className="text-textPri text-[18px] text-left font-medium leading-[30px] w-[461px] h-[60px] top-[4905px] left-[130px]">
+                Everything you need to accept payment and grow your money of manage anywhere on planet
+            </p>
+            <div className="mb-8">
+                <img src={textIcon} alt="" className="w-[45px] h-[38px] top-[5007] left-[135px] text-[#D9D9D9]" />
+                <p className="text-[18px] text-textPri text-left font-medium leading-[30px] mb-4 w-[451px] h-[90px] top-[5085px] left-[135px]">{currentTestimonial.text}</p>
+                <p className="text-textPri text-[18px] text-left font-medium leading-[30px] w-[128px] h-[30px] top-[5215px] left-[135px]">_ {currentTestimonial.name}</p>
+            </div>
+            <div className="flex space-x-4">
+                {testimonials.map((testimonial) => (
+                    <img
+                        key={testimonial.id}
+                        src={testimonial.image}
+                        alt={testimonial.name}
+                        className={`w-12 h-12 rounded-full cursor-pointer ${
+                        currentTestimonial.id === testimonial.id ? 'ring-2 ring-white' : ''
+                        }`}
+                        onClick={() => handleClick(testimonial)}
+                    />
+                ))}
+                <button className="bg-gray-700 p-3 rounded-full">
+                    <img src={testImg} alt="" className="text-[#fff]" />
+                </button>
+            </div>
         </div>
     )
 }
