@@ -269,3 +269,33 @@ export const testimonials = [
     image: img4,
   },
 ]
+
+export const footerData = [
+    {
+      title: 'Support',
+      links: [
+        { name: 'Help centre', url: '#' },
+        { name: 'Account information', url: '#' },
+        { name: 'About', url: '#' },
+        { name: 'Contact us', url: '#' },
+      ],
+    },
+    {
+      title: 'Help and Solution',
+      links: [
+        { name: 'Talk to support', url: '#' },
+        { name: 'Support docs', url: '#' },
+        { name: 'System status', url: '#' },
+        { name: 'Covid respond', url: '#' },
+      ],
+    },
+    {
+      title: 'Product',
+      links: [
+        { name: 'Update', url: '#' },
+        { name: 'Security', url: '#' },
+        { name: 'Beta test', url: '#' },
+        { name: 'Pricing product', url: '#' },
+      ],
+    },
+  ];

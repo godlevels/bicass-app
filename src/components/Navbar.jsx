@@ -10,10 +10,8 @@ const Navbar = () => {
     <>
         <nav className="w-full h-auto lg:px-24 md:px-16 sm:px-6 px-4 lg:py-4 md:py-4 sm:py-1 py-1 sticky top-0 font-[inter]">
         <div className="justify-between mx-auto lg:w-full md:items-center md:flex">
-          {/* Navbar logo & toggle button section */}
             <div>
             <div className="flex items-center justify-between py-1 md:py-1 md:block">
-              {/* Logo section */}
                 <a href="/" className="text-xl font-semibold tracking-[0.1rem] flex items-end gap-x-1 relative">
                   <img src={logo} alt="" />
                 </a>
@@ -31,7 +29,6 @@ const Navbar = () => {
                 </div>
             </div>
             </div>
-          {/* NAvbar menu items section */}
             <div
             className={`flex justify-between items-center md:block ${
                 navbar ? "block" : "hidden"
