@@ -5,7 +5,7 @@ import playIcn from "../assets/play.png";
 
 const Hero = () => {
     return (
-        <main className="flex flex-col items-center lg:flex-row lg:justify-between lg:items-start py-16 w-full h-auto lg:px-24 md:px-16 sm:px-6 px-4">
+        <main className="flex flex-col items-center lg:flex-row lg:justify-between lg:items-center py-16 w-full h-auto lg:px-24 md:px-16 sm:px-6 px-4">
             <div className="lg:w-1/2 w-full text-center lg:text-left">
                 <h1 className="text-4xl lg:text-[5rem] md:text-[5rem] font-extrabold leading-tight mb-6">
                     {heroData.heading}
@@ -27,7 +27,7 @@ const Hero = () => {
                 </div>
             </div>
             <div className="w-full lg:w-1/2 flex justify-center lg:justify-end mt-8 lg:mt-0">
-                <img src={heroImg} alt="" className="w-full max-w-md lg:max-w-full" />
+                <img src={heroImg} alt="" className="w-full max-w-md lg:max-w-full object-cover" />
             </div>
         </main>
     );
