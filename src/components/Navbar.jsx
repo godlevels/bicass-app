@@ -34,7 +34,7 @@ const Navbar = () => {
                 navbar ? "block" : "hidden"
             }`}
             >
-              <div className="lg:flex md:block sm:block block items-center gap-x-[6rem]">
+              <div className="lg:flex md:block sm:block block items-center gap-x-[6rem] mt-6 md:mt-0 lg:mt-0">
                 <ul className="list-none lg:flex md:flex sm:block block items-center gap-y-16 gap-x-[3rem]">
                     {navLinks.map((item, index) => (
                     <li key={index}>
@@ -48,7 +48,7 @@ const Navbar = () => {
                 ))}
                 </ul>
 
-                <ul className="list-none lg:flex md:flex sm:block block items-center gap-y-16 gap-x-[2rem]">
+                <ul className="list-none flex items-center py-6 md:py-0 lg:py-0 gap-x-[1rem] md:gap-x-[1.8rem] lg:gap-x-[2rem]">
                   {navBtns.map((btn, index) => (
                       <li key={index}>
                         <a
