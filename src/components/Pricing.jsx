@@ -7,12 +7,15 @@ const Pricing = () => {
     const pricingPlans = pricingData[billing];
     return (
         <div className='py-14 w-full h-auto lg:px-24 md:px-16 sm:px-6 px-4'>
-            <div className="flex flex-col items-center justify-center">
-                <h1 className="text-[3rem] text-textSec text-center font-bold leading-[4.57rem] w-[492px] h-[146px]">
+            <div className="flex flex-col items-center justify-center px-4 md:px-0">
+                <h1 className="text-[2rem] sm:text-[2.5rem] md:text-[3rem] text-textSec text-center font-bold leading-tight sm:leading-snug md:leading-[4.57rem] w-full md:w-[492px] h-auto md:h-[146px]">
                     Choose Plan <br /> That’s Right For You
                 </h1>
-                <p className='text-[1.13rem] text-textPri text-center font-bold leading-[1.37rem] mt-5 mb-9'>Choose plan that works best for you, feel free to contact us</p>
+                <p className="text-[1rem] sm:text-[1.13rem] text-textPri text-center font-bold leading-relaxed sm:leading-[1.37rem] mt-5 mb-9">
+                    Choose plan that works best for you, feel free to contact us
+                </p>
             </div>
+
             <div>
                 <div className="flex justify-center items-center">
                     <div className="flex justify-center mb-8 bg-slate-100 py-3 rounded-md shadow-md w-[340px] h-[70px] top-[3682px] left-[561px]">
