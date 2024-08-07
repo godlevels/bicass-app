@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Collabs = () => {
   return (
-    <div className="py-5 w-full h-auto lg:px-24 md:px-16 sm:px-6 px-4">
+    <div className="py-5 w-full h-auto lg:px-24 md:px-16 sm:px-6 px-4 pb-14">
       <h1 className="text-center text-[2.5rem] font-bold leading-[3rem] pb-4">
         More than 25,000 teams use Collabs
       </h1>

@@ -31,7 +31,7 @@ const Support = () => {
           className="lg:w-[40.2rem] w-full mb-8 lg:mb-0"
           variants={itemVariants}
         >
-          <div className="text-left mb-8 mt-2">
+          <div className="text-left mb-8 mt-8">
             <motion.h2
               className="text-[2rem] lg:text-[3.1rem] text-left text-textSec font-semibold leading-tight lg:leading-[3.8rem]"
               variants={itemVariants}
@@ -39,7 +39,7 @@ const Support = () => {
               {supportData.title}
             </motion.h2>
             <motion.p
-              className="text-[1rem] text-left text-textPri font-medium leading-relaxed lg:leading-[1.88rem] my-4"
+              className="text-[1rem] text-left text-textPri font-medium leading-relaxed lg:leading-[1.88rem] my-8"
               variants={itemVariants}
             >
               {supportData.description}
